@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int color; // Variable to store the color as an integer
+
+    // Provide instructions to the user
+    printf("Enter the signal color as an integer:\n");
+    printf("1 for Red, 2 for Yellow, 3 for Green: ");
+    scanf("%d", &color);
+
+    // Using if-else conditions to determine the action
+    if (color == 1) {
+        printf("Stop!\n");
+    } else if (color == 2) {
+        printf("Wait!\n");
+    } else if (color == 3) {
+        printf("Go!\n");
+    } else {
+        printf("Invalid signal color!\n");
+    }
+
+    return 0;
+}
